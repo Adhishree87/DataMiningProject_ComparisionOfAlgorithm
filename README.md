@@ -1,0 +1,2 @@
+# DataMiningProject_ComparisionOfAlgorithm
+1_AdhishreeAcharaya and29_Simran Mahat
