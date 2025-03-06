@@ -1,91 +1,48 @@
-Water Potability Classification
+<h1 align="center"> Water Potability Classification Using Machine Learning Algorithms </h1>
 
-Overview
+---
 
-This project compares machine learning algorithms to predict water potability using physicochemical properties from the Water Potability Dataset (Kaggle). The goal is to find the best model for classifying water as potable or non-potable.
+## 📌 Dataset Information
+- **Source:** [Kaggle Water Potability Dataset](https://www.kaggle.com/datasets/uom190346a/water-quality-and-potability)  
+- **Features:** pH, Hardness, Solids, Chloramines, Sulfates, Conductivity, Organic Carbon, Trihalomethanes, Turbidity, Potability  
+- **Rows:** 11,115  
+- **Missing Values:** pH, Sulfates, Trihalomethanes  
 
-Dataset
+---
 
-Source: Kaggle
+## Data Preprocessing
+- Missing values imputed with **mean** strategy  
+- Outliers handled using **IQR (Interquartile Range)** method  
 
-Features: pH, Hardness, Solids, Chloramines, Sulfates, Conductivity, Organic Carbon, Trihalomethanes, Turbidity, Potability
+---
 
-Rows: 11,115
+## Models Implemented  
+- Random Forest   
+- Decision Tree  
+- Logistic Regression 
+- K-Nearest Neighbors (KNN)   
+- Support Vector Machine (SVM) 
 
-Missing Values: pH, Sulfates, Trihalomethanes
+---
 
-Preprocessing
+## Results  
 
-Missing values imputed with mean
+| Model               | Accuracy | F1 Score |
+|-------------------|----------|---------|
+| **Random Forest** | **98.52%** | **98.07%** |
+| KNN               | 75.53%   | 67.62%  |
+| Decision Tree     | 65.81%   | 29.50%  |
+| SVM              | 61.22%   | 0.69%   |
+| Logistic Regression | 61.22% | 0.00%   |
 
-Outliers handled using the IQR method
+---
 
-Models Applied
+## 🔥 Best Performing Model  
+✅ **Random Forest** with the highest accuracy and F1 Score.
 
-Random Forest
+---
 
-Decision Tree
+## 📌 Conclusion  
+Random Forest emerged as the most effective model for predicting water potability, offering robust performance across all key evaluation metrics.
 
-Logistic Regression
-
-KNN
-
-SVM
-
-Results
-
-Model
-
-Accuracy
-
-F1 Score
-
-Random Forest
-
-98.52%
-
-98.07%
-
-KNN
-
-75.53%
-
-67.62%
-
-Decision Tree
-
-65.81%
-
-29.50%
-
-SVM
-
-61.22%
-
-0.69%
-
-Logistic Regression
-
-61.22%
-
-0.00%
-
-Best Model
-
-Random Forest performed best with the highest accuracy and F1 Score.
-
-Conclusion
-
-Random Forest is the most effective model for water potability classification due to its superior performance across key metrics.
-
-Reference
-
-Dataset: Kaggle Water Potability Dataset
-
-Authors
-
-Adhishree Acharya, Simran Mahat
-
-License
-
-For academic purposes only.
+---
