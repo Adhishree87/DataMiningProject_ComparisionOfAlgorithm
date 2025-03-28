@@ -25,15 +25,7 @@
 
 ---
 
-## Results  
 
-| Model               | Accuracy | F1 Score |
-|-------------------|----------|---------|
-| **Random Forest** | **98.52%** | **98.07%** |
-| KNN               | 75.53%   | 67.62%  |
-| Decision Tree     | 65.81%   | 29.50%  |
-| SVM              | 61.22%   | 0.69%   |
-| Logistic Regression | 61.22% | 0.00%   |
 
 ---
 
